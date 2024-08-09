@@ -14,9 +14,9 @@ function BuildingTasks() {
   const deleteTask = (id) => {
     setTasks(tasks.filter((item) => item.id !== id))
   }
-
+// , height:'calc(100% - 30px)'
   return (
-    <div style={{ rowGap:'10px' , display : 'grid' , padding:'15px' , backgroundColor:'#F3F3F3' , height:'calc(100% - 30px)' , width:'100%' , borderRadius:'12px'}}>
+    <div style={{ rowGap:'8px' , display : 'grid' , padding:'8px' , backgroundColor:'#F3F3F3' , height:'calc(100% - 16px)' , width:'100%' , borderRadius:'12px'}}>
       <div>
         <div style={{display:'flex' ,  columnGap:'16px'}}>
           <FloorNumber fnum='1'/>

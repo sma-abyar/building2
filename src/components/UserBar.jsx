@@ -9,7 +9,6 @@ import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import ListItemText from '@mui/material/ListItemText';
 import { Typography } from '@mui/material';
 
-
 const drawerWidth = 240;
 
 
@@ -26,17 +25,22 @@ const DrawerHeader = styled('div')(({ theme }) => ({
 export default function PersistentDrawerRight() {
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
+  const [ww, setww] = React.useState('50px');
 
   const handleDrawerOpen = () => {
     setOpen(true);
+    setww('200px')
   };
 
   const handleDrawerClose = () => {
     setOpen(false);
+    setww('500px')
   };
 
+
+
   return (
-    <div style={{backgroundColor:'#FFFFFF' , height:'100%' , width:'50px' , borderRadius:'12px'}}>
+    <div style={{backgroundColor:'#FFFFFF' , height:'100%' , width:ww , borderRadius:'12px'}}>
             <button open={open} style={{border:'none' , backgroundColor:'transparent'}}>
             <IconButton
                 color="inherit"

@@ -49,14 +49,14 @@ const data = {
   ],
 };
 
-// تابع برای رندر کردن درخت به طور بازگشتی
+
 const renderTreeItems = (node) => {
   return (
     <TreeItem
       key={node.id}
       itemId={node.id}
       label={node.title}
-      icon={MailIcon} // می‌توانید آیکون دیگری استفاده کنید
+      icon={MailIcon} 
     >
       {node.children && node.children.length > 0 && (
         <>

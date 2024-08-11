@@ -54,6 +54,36 @@ const StyledTreeItem = styled(TreeItem)(({ theme }) => ({
   '& .MuiCollapse-root': {
     paddingLeft: '0',
     paddingRight: '12px',
+  },
+  '& .Mui-focused': {
+    backgroundColor: '#FEEFEA !important',
+    border: 'solid 0.15rem #F15F2B !important',
+  },
+  '& .Mui-selected': {
+    backgroundColor: '#FEEFEA !important',
+  },
+  '& .MuiTreeItem-content': {
+    backgroundColor: '#F3F3F3',
+    borderRadius: '2rem !important',
+    height: '3rem',
+    padding: '1rem',
+    margin: '0.6rem 0',
+    color: 'black',
+    textAlign: 'right',
+    direction: 'ltr',
+  },
+  '& MuiTreeItem-root': {
+    padding: '1rem',
+  },
+  '& .Mui-expanded': {
+    backgroundColor: '#FEEFEA !important',
+  },
+  '& .TreeBox': {
+    backgroundColor: 'white',
+    height: 'calc(100% - 32px)',
+    width: '40vh',
+    borderRadius: '2rem',
+    padding: '1rem',
   }
 }))
 

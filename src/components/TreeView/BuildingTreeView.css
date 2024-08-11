@@ -1,52 +1,9 @@
-.TreeItem {
-  color: black;
-  text-align: right;
-  direction: ltr;
-  padding: 1rem;
-}
-
 .TreeBox {
   background-color: white;
   height: calc(100% - 32px);
   width: 40vh;
   border-radius: 2rem;
   padding: 1rem;
-}
-
-
-.MuiTreeItem-root,
-.TreeItem,
-.css-16alkdk-MuiTreeItem-root{
-  padding: 1rem;
-}
-
-.css-53rj3a-MuiTreeItem-content {
-  background-color: #F3F3F3;
-  border-radius: 2rem !important;
-  height: 2rem;
-  padding: 1rem;
-}
-.MuiTreeItem-content {
-  height: 3rem;
-  margin: 0.6rem 0;
-  color: black;
-  text-align: right;
-  direction: ltr;
-  padding: 1rem;
-}
-
-
-.Mui-expanded {
-  background-color: #FEEFEA !important;
-}
-
-.css-53rj3a-MuiTreeItem-content.Mui-selected {
-  background-color: #FEEFEA !important;
-}
-
-.css-53rj3a-MuiTreeItem-content.Mui-selected.Mui-focused {
-  background-color: #FEEFEA !important;
-  border: solid 0.2rem #F15F2B !important;
 }
 
 @font-face {

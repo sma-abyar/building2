@@ -49,10 +49,6 @@
   border: solid 0.2rem #F15F2B !important;
 }
 
-.TreeView {
-  --TreeView-itemChildrenIndentation: 0 !important;
-}
-
 @font-face {
   font-family: Vazirmatn;
   src: url('src\\assets\\Fonts\\Vazirmatn-Regular.ttf');

@@ -3,6 +3,7 @@ import { SimpleTreeView } from '@mui/x-tree-view/SimpleTreeView';
 import { TreeItem } from '@mui/x-tree-view/TreeItem';
 import MailIcon from '@mui/icons-material/Mail';
 import './BuildingTreeView.css';
+import { styled } from '@mui/material';
 
 const data = {
   id: 'root',
@@ -49,21 +50,27 @@ const data = {
   ],
 };
 
+const StyledTreeItem = styled(TreeItem)(({ theme }) => ({
+  '& .MuiCollapse-root': {
+    paddingLeft: '0',
+    paddingRight: '12px',
+  }
+}))
 
 const renderTreeItems = (node) => {
   return (
-    <TreeItem
+    <StyledTreeItem
       key={node.id}
       itemId={node.id}
       label={node.title}
-      icon={MailIcon} 
+      icon={MailIcon}
     >
       {node.children && node.children.length > 0 && (
         <>
           {node.children.map(child => renderTreeItems(child))}
         </>
       )}
-    </TreeItem>
+    </StyledTreeItem>
   );
 };
 
